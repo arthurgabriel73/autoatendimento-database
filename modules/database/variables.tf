@@ -32,3 +32,13 @@ variable "sg_id" {
   type        = string
   description = "The security group ID to attach to the database"
 }
+
+variable "database_subnet_private_1a" {
+  type        = string
+  description = "The ID of the private subnet in AZ 1a"
+}
+
+variable "database_subnet_private_1b" {
+  type        = string
+  description = "The ID of the private subnet in AZ 1b"
+}

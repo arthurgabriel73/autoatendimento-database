@@ -32,8 +32,3 @@ variable "database_password" {
   type        = string
   description = "The password for the database"
 }
-
-variable "database_identifier" {
-  type        = string
-  description = "The identifier for the database"
-}
