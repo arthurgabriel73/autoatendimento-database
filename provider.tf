@@ -5,12 +5,6 @@ terraform {
       version = "4.48.0"
     }
   }
-
-  backend "s3" {
-    bucket = "autoatendimento-bucket"
-    key    = "dev/database/terraform.tfstate"
-    region = "us-east-1"
-  }
 }
 
 provider "aws" {
