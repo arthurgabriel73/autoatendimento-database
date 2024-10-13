@@ -32,3 +32,13 @@ variable "database_password" {
   type        = string
   description = "The password for the database"
 }
+
+variable "vpc_id" {
+    type = string
+    description = "VPC ID"
+}
+
+variable "sg_id" {
+    type = string
+    description = "Security Group ID"
+}
