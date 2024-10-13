@@ -1,39 +1,38 @@
-# autoatendimento-database
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.48.0 |
+No requirements.
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_database"></a> [database](#module\_database) | ./modules/database | n/a |
-| <a name="module_network"></a> [network](#module\_network) | ./modules/network | n/a |
+No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_db_instance.postgresql](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance) | resource |
+| [aws_db_subnet_group.db_subnet_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_subnet_group) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | Networking CIDR block to be used for the VPC | `string` | n/a | yes |
 | <a name="input_database_name"></a> [database\_name](#input\_database\_name) | The name of the database | `string` | n/a | yes |
 | <a name="input_database_password"></a> [database\_password](#input\_database\_password) | The password for the database | `string` | n/a | yes |
+| <a name="input_database_subnet_private_1a"></a> [database\_subnet\_private\_1a](#input\_database\_subnet\_private\_1a) | The ID of the private subnet in AZ 1a | `string` | n/a | yes |
+| <a name="input_database_subnet_private_1b"></a> [database\_subnet\_private\_1b](#input\_database\_subnet\_private\_1b) | The ID of the private subnet in AZ 1b | `string` | n/a | yes |
 | <a name="input_database_username"></a> [database\_username](#input\_database\_username) | The username for the database | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Project name to be used to name the resources (Name tag) | `string` | n/a | yes |
-| <a name="input_region"></a> [region](#input\_region) | AWS region to create the resources | `string` | n/a | yes |
-| <a name="input_sg_id"></a> [sg\_id](#input\_sg\_id) | Security Group ID | `string` | n/a | yes |
+| <a name="input_sg_id"></a> [sg\_id](#input\_sg\_id) | The security group ID to attach to the database | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all AWS resources | `map(any)` | n/a | yes |
-| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | VPC ID | `string` | n/a | yes |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | The VPC ID to create the database in | `string` | n/a | yes |
 
 ## Outputs
 
