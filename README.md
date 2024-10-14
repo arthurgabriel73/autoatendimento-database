@@ -30,7 +30,6 @@ No resources.
 | <a name="input_database_password"></a> [database\_password](#input\_database\_password) | The password for the database | `string` | n/a | yes |
 | <a name="input_database_username"></a> [database\_username](#input\_database\_username) | The username for the database | `string` | n/a | yes |
 | <a name="input_eks_sg_id"></a> [eks\_sg\_id](#input\_eks\_sg\_id) | EKS Security Group ID | `string` | n/a | yes |
-| <a name="input_lambda_sg_id"></a> [lambda\_sg\_id](#input\_lambda\_sg\_id) | Lambda Security Group ID | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Project name to be used to name the resources (Name tag) | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | AWS region to create the resources | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all AWS resources | `map(any)` | n/a | yes |

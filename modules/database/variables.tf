@@ -33,11 +33,6 @@ variable "eks_sg_id" {
   description = "The eks security group ID"
 }
 
-variable "lambda_sg_id" {
-  type        = string
-  description = "The lambda security group ID"
-}
-
 variable "database_subnet_private_1a" {
   type        = string
   description = "The ID of the private subnet in AZ 1a"

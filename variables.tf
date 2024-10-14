@@ -42,8 +42,3 @@ variable "eks_sg_id" {
     type = string
     description = "EKS Security Group ID"
 }
-
-variable "lambda_sg_id" {
-    type = string
-    description = "Lambda Security Group ID"
-}

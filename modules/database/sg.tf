@@ -9,7 +9,6 @@ resource "aws_security_group" "db_sg" {
     protocol    = "tcp"
     security_groups = [
       var.eks_sg_id,
-      var.lambda_sg_id
     ]
   }
 

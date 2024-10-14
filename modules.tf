@@ -7,10 +7,8 @@ module "database" {
   database_password          = var.database_password
   vpc_id                     = var.vpc_id
   eks_sg_id                      = var.eks_sg_id
-  lambda_sg_id                   = var.lambda_sg_id
   database_subnet_private_1a = module.network.database_subnet_private_1a
   database_subnet_private_1b = module.network.database_subnet_private_1b
-
 }
 
 module "network" {
