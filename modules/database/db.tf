@@ -18,6 +18,7 @@ resource "aws_db_instance" "postgresql" {
   storage_type           = "gp2"
   username               = var.database_username
   password               = var.database_password
+  db_name = var.database_name
   db_subnet_group_name   = aws_db_subnet_group.db_subnet_group.name
   vpc_security_group_ids = [var.sg_id]
   skip_final_snapshot  = true
