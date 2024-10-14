@@ -20,9 +20,8 @@ resource "aws_db_instance" "postgresql" {
   password               = var.database_password
   db_name = var.database_name
   db_subnet_group_name   = aws_db_subnet_group.db_subnet_group.name
-  vpc_security_group_ids = [var.sg_id]
+  vpc_security_group_ids = [aws_security_group.db_sg.id]
   skip_final_snapshot  = true
-  publicly_accessible  = true # Temporary for testing
 
   tags = merge(var.tags, {
     Name = "${var.project_name}-rds"

@@ -19,6 +19,7 @@ No modules.
 |------|------|
 | [aws_db_instance.postgresql](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance) | resource |
 | [aws_db_subnet_group.db_subnet_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_subnet_group) | resource |
+| [aws_security_group.db_sg](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
 
 ## Inputs
 
@@ -29,8 +30,9 @@ No modules.
 | <a name="input_database_subnet_private_1a"></a> [database\_subnet\_private\_1a](#input\_database\_subnet\_private\_1a) | The ID of the private subnet in AZ 1a | `string` | n/a | yes |
 | <a name="input_database_subnet_private_1b"></a> [database\_subnet\_private\_1b](#input\_database\_subnet\_private\_1b) | The ID of the private subnet in AZ 1b | `string` | n/a | yes |
 | <a name="input_database_username"></a> [database\_username](#input\_database\_username) | The username for the database | `string` | n/a | yes |
+| <a name="input_eks_sg_id"></a> [eks\_sg\_id](#input\_eks\_sg\_id) | The eks security group ID | `string` | n/a | yes |
+| <a name="input_lambda_sg_id"></a> [lambda\_sg\_id](#input\_lambda\_sg\_id) | The lambda security group ID | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Project name to be used to name the resources (Name tag) | `string` | n/a | yes |
-| <a name="input_sg_id"></a> [sg\_id](#input\_sg\_id) | The security group ID to attach to the database | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all AWS resources | `map(any)` | n/a | yes |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | The VPC ID to create the database in | `string` | n/a | yes |
 

@@ -28,9 +28,14 @@ variable "vpc_id" {
   description = "The VPC ID to create the database in"
 }
 
-variable "sg_id" {
+variable "eks_sg_id" {
   type        = string
-  description = "The security group ID to attach to the database"
+  description = "The eks security group ID"
+}
+
+variable "lambda_sg_id" {
+  type        = string
+  description = "The lambda security group ID"
 }
 
 variable "database_subnet_private_1a" {
